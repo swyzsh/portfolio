@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url(./metadata/fonts/IBMPlexMono-Regular.ttf);
+}
+
+:root {
+  --mantle: #181825;
+  --crust: #11111b;
+  --rosewater: #f5e0dc;
+  --mauve: #cba6f7;
+  --red: #f38ba8;
+  --maroon: #eba0ac;
+  --teal: #94e2d5;
+  --lavender: #b4befe;
+  --text: #cdd6f4;
+  --yellow: #f9e2af;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/**
+* Disable smooth scrolling when users have prefers-reduced-motion enabled
+*/
+@media screen and (prefers-reduced-motion: reduce) {
+html {
+  scroll-behavior: auto;
+}
+}
+
+body {
+  font-family: 'IBM Plex Mono';
+  color: var(--text);
+  background-color: var(--mantle);
+  font-size: 1rem;
+}
+
+h1 {
+  color: var(--rosewater);
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: -8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+  color: var(--rosewater);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link {
+  color: var(--maroon);
+}
+a:visited {
+  color: var(--mauve);
+}
+a:hover {
+  color: var(--lavender);
+}
+
+.divider {
+  display: block;
+  background-color: var(--text);
+  opacity: 33%;
+  width: 300px;
+  height: 1px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#index-wrapper {
+  font-family: 'IBM Plex Mono';
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hyperlink-text {
+  font-size: 1rem;
+}
