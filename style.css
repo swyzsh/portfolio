@@ -23,9 +23,9 @@ html {
 * Disable smooth scrolling when users have prefers-reduced-motion enabled
 */
 @media screen and (prefers-reduced-motion: reduce) {
-html {
-  scroll-behavior: auto;
-}
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -33,6 +33,9 @@ body {
   color: var(--text);
   background-color: var(--mantle);
   font-size: 1rem;
+  margin: 0 auto; /* center content horizontally */
+  width: 320px;
+  height: 100%;
 }
 
 h1 {
@@ -66,10 +69,10 @@ a:hover {
   display: block;
   background-color: var(--text);
   opacity: 33%;
-  width: 300px;
+  width: 220px;
   height: 1px;
   margin-top: -20px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
