@@ -2,18 +2,28 @@
   font-family: 'IBM Plex Mono';
   src: url(./metadata/fonts/IBMPlexMono-Regular.ttf);
 }
+@font-face {
+  font-family: 'SF';
+  src: url(./metadata/fonts/san-francisco-pro/SF-Pro.ttf);
+}
 
 :root {
-  --mantle: #181825;
-  --crust: #11111b;
-  --rosewater: #f5e0dc;
-  --mauve: #cba6f7;
-  --red: #f38ba8;
-  --maroon: #eba0ac;
-  --teal: #94e2d5;
-  --lavender: #b4befe;
-  --text: #cdd6f4;
-  --yellow: #f9e2af;
+  --polarNight1: #2e3440;
+  --polarNight2: #3b4252;
+  --polarNight3: #434c5e;
+  --polarNight4: #4c566a;
+  --snowStorm1: #d8dee9;
+  --snowStorm2: #e5e9f0;
+  --snowStorm3: #eceff4;
+  --frost1: #8fbcbb;
+  --frost2: #88c0d0;
+  --frost3: #81a1c1;
+  --frost4: #5e81ac;
+  --auroraRed: #bf616a;
+  --auroraPeach: #d08770;
+  --auroraYellow: #ebcb8b;
+  --auroraGreen: #a3be8c;
+  --auroraViolet: #b48ead;
 }
 
 html {
@@ -29,26 +39,31 @@ html {
 }
 
 body {
-  font-family: 'IBM Plex Mono';
-  color: var(--text);
-  background-color: var(--mantle);
+  font-family: 'SF';
+  color: var(--snowStorm1);
+  background-color: var(--polarNight1);
   font-size: 1rem;
+  font-weight: 300;
   margin: 0 auto; /* center content horizontally */
   width: 320px;
   height: 100%;
 }
 
 h1 {
-  color: var(--rosewater);
+  color: var(--auroraViolet);
   font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 4px;
   text-align: center;
   margin-bottom: -8px;
   margin-left: auto;
   margin-right: auto;
 }
 h2 {
-  color: var(--rosewater);
+  color: var(--frost2);
   font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
   text-align: center;
   margin-bottom: 36px;
   margin-left: auto;
@@ -56,21 +71,21 @@ h2 {
 }
 
 a:link {
-  color: var(--maroon);
+  color: var(--auroraPeach);
 }
 a:visited {
-  color: var(--mauve);
+  color: var(--auroraViolet);
 }
 a:hover {
-  color: var(--lavender);
+  color: var(--frost2);
 }
 
 .divider {
   display: block;
-  background-color: var(--text);
-  opacity: 33%;
+  background-color: var(--auroraPeach);
+  opacity: 69%;
   width: 220px;
-  height: 1px;
+  height: 2px;
   margin-top: -20px;
   margin-bottom: 40px;
   margin-left: auto;
@@ -78,7 +93,7 @@ a:hover {
 }
 
 #index-wrapper {
-  font-family: 'IBM Plex Mono';
+  font-family: 'SF';
   display: flex;
   flex-direction: column;
   gap: 8px;
